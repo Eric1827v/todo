@@ -10,4 +10,8 @@ npm install
 webpack -w
 ```
 
-####View /public/index.html in your browser
+###View 
+
+```bash
+public/index.html
+```
