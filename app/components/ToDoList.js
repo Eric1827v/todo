@@ -1,6 +1,6 @@
 var React = require('react');
 
-var TodoAria = React.createClass({
+var TodoElements = React.createClass({
   render: function() {
     return (
       <div>
@@ -12,7 +12,7 @@ var TodoAria = React.createClass({
   }
 });
   
-var ToDoList = React.createClass({
+var TodoList = React.createClass({
   getInitialState: function() {
     return {
       todos: [
@@ -62,7 +62,7 @@ var ToDoList = React.createClass({
 
     var todos = this.state.todos.map(function(todo, index) {
       return (
-        <TodoAria
+        <TodoElements
         key={index}
         value={todo.value}
         done={todo.done}
@@ -95,4 +95,4 @@ var ToDoList = React.createClass({
   }
 });
 
-module.exports = ToDoList;
+module.exports = TodoList;

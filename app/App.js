@@ -1,9 +1,9 @@
 var React = require('react');
-var ToDoList = require('./components/ToDoList')
+var TodoList = require('./components/TodoList')
 
 window.onload = function() {
 	React.render(
-			<ToDoList />,
+			<TodoList />,
 			document.getElementById('app')
 		)
 }

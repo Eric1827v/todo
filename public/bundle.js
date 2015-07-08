@@ -47,10 +47,10 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var ToDoList = __webpack_require__(158);
+	var TodoList = __webpack_require__(158);
 
 	window.onload = function () {
-			React.render(React.createElement(ToDoList, null), document.getElementById('app'));
+			React.render(React.createElement(TodoList, null), document.getElementById('app'));
 	};
 
 /***/ },
@@ -20437,8 +20437,8 @@
 
 	var React = __webpack_require__(1);
 
-	var TodoAria = React.createClass({
-	  displayName: 'TodoAria',
+	var TodoElements = React.createClass({
+	  displayName: 'TodoElements',
 
 	  render: function render() {
 	    return React.createElement(
@@ -20459,8 +20459,8 @@
 	  }
 	});
 
-	var ToDoList = React.createClass({
-	  displayName: 'ToDoList',
+	var TodoList = React.createClass({
+	  displayName: 'TodoList',
 
 	  getInitialState: function getInitialState() {
 	    return {
@@ -20504,7 +20504,7 @@
 	  render: function render() {
 
 	    var todos = this.state.todos.map((function (todo, index) {
-	      return React.createElement(TodoAria, {
+	      return React.createElement(TodoElements, {
 	        key: index,
 	        value: todo.value,
 	        done: todo.done,
@@ -20553,7 +20553,7 @@
 	  }
 	});
 
-	module.exports = ToDoList;
+	module.exports = TodoList;
 
 /***/ }
 /******/ ]);
